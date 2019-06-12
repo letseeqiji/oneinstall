@@ -83,7 +83,7 @@ sh goinstall.sh
 
 ## 文档
 
-[简体中文](https://github.com/letseeqiji/git-helper/blob/master/README.md)
+[简体中文](https://github.com/letseeqiji/oneinstall/edit/master/golang/README.md)
 
 ------
 
