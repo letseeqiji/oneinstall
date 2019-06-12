@@ -1,4 +1,4 @@
-
+[![Language](https://img.shields.io/badge/Language-Shell-blue.svg)](https://github.com/letseeqiji/git-helper)
 [![Build Status](https://travis-ci.org/bilibili/kratos.svg?branch=master)](https://github.com/letseeqiji/git-helper)
 
 # 一键自动安装配置GO最新版脚本
@@ -83,7 +83,7 @@ sh goinstall.sh
 
 ## 文档
 
-[简体中文](https://github.com/letseeqiji/oneinstall/edit/master/golang/README.md)
+[简体中文](https://github.com/letseeqiji/oneinstall/blob/master/golang/README.md)
 
 ------
 
