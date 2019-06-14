@@ -4,7 +4,7 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 
 goone_ver=1.0.1
-give_info="请联系作者，微信：962310113"
+give_info="请联系作者，QQ：962310113"
 
 clear
 echo "+------------------------------------------------------------------------+"
