@@ -52,7 +52,6 @@ else
 	exit 0
 fi
 
-
 #下载最新的go版本
 gourl=$(curl -s  https://studygolang.com/dl |  sed -n '/dl\/golang\/go.*\.linux-amd64\.tar\.gz/p' | sed -n '1p' | sed -n '/1/p' | awk 'BEGIN{FS="\""}{print $4}')
 goweb="https://studygolang.com"
