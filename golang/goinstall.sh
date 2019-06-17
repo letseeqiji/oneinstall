@@ -94,6 +94,11 @@ if [ $? -ne 0 ]; then
 	echo -e -n "\033[01;36m导入环境变量失败，${give_info}\033[0m "
 	exit 1
 fi
+echo 'export GOPATH=$USER/go/src' >> $pathFile
+if [ $? -ne 0 ]; then
+	echo -e -n "\033[01;36m导入环境变量失败，${give_info}\033[0m "
+	exit 1
+fi
 source $pathFile
 if [ $? -ne 0 ]; then
 	echo -e -n "\033[01;36m导入环境变量失败，${give_info}\033[0m "
@@ -104,9 +109,40 @@ fi
 go version
 if [ $? -eq 0 ]; then
 	echo -e -n "\033[01;36m您已经成功安装了go\033[0m "
+	
+	echo -e -n "\033[01;36m下面将为您自动导入 golang.org/x 包\033[0m "
+	export_goorg_x
 	echo -e -n "\033[01;36mBye V_V"
 	exit 0
 else
 	echo -e -n "\033[01;36m安装失败\033[0m "
 	exit 1
 fi
+
+export_goorg_x()
+{
+	cd $GOPATH;
+	if [ $? -ne 0 ]; then
+		echo -e -n "\033[01;36m没有找到 ${GOPATH}\033[0m "
+		return
+	fi
+	#创建 $GOPATH/src/golang.org/x 目录
+	mkdir -p src/golang.org/x
+	cd src/golang.org/x
+	echo -e -n "\033[01;36m已经安装的golang.org/x package[0m "
+	ls
+	echo -e -n "\033[01;36m下面一行 for in 中包的名字您可以自己来定义[0m "
+	for name in "glog" "image" "perf" "snappy" "term" "sync" "winstrap" "cwg" "leveldb" "text" "net" "build" "protobuf" "dep" "sys" "crypto" "gddo" "tools" "scratch" "proposal" "mock" "oauth2" "freetype" "debug" "mobile" "gofrontend" "lint" "appengine" "geo" "review" "arch" "vgo" "exp" "time";do
+	   if [ -d "$name" ]
+	   then
+		 cd $name
+		 echo -e -n "\033[01;36m ${name} 包已经存在,请使用git pull来更新源码[0m "
+		 git pull;
+	   else
+		 git_url="https://github.com/golang/${name}.git";
+		 echo -e -n "\033[01;36m开始clone golang.org/x 在github.com上的镜像代码:${git_url}[0m "
+		 git clone --depth 1 "$git_url"
+		 cd $name
+	   fi
+	done
+}
