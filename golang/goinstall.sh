@@ -132,7 +132,7 @@ export_goorg_x()
 	echo -e -n "\033[01;36m已经安装的golang.org/x package[0m "
 	ls
 	echo -e -n "\033[01;36m下面一行 for in 中包的名字您可以自己来定义[0m "
-	for name in "glog" "image" "perf" "snappy" "term" "sync" "winstrap" "cwg" "leveldb" "text" "net" "build" "protobuf" "dep" "sys" "crypto" "gddo" "tools" "scratch" "proposal" "mock" "oauth2" "freetype" "debug" "mobile" "gofrontend" "lint" "appengine" "geo" "review" "arch" "vgo" "exp" "time";do
+	for name in "text" "glog" "image" "perf" "snappy" "term" "sync" "winstrap" "cwg" "leveldb" "text" "net" "build" "protobuf" "dep" "sys" "crypto" "gddo" "tools" "scratch" "proposal" "mock" "oauth2" "freetype" "debug" "mobile" "gofrontend" "lint" "appengine" "geo" "review" "arch" "vgo" "exp" "time";do
 	   if [ -d "$name" ]
 	   then
 		 cd $name
