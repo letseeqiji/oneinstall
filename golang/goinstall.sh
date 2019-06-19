@@ -3,7 +3,7 @@
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 
-goone_ver=1.0.1
+goone_ver=1.0.2
 give_info="请联系作者，QQ：962310113"
 
 clear
