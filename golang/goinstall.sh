@@ -84,7 +84,7 @@ if[ ! -f "$pathFile" ]; then
 	exit 1
 fi
 
-# 导入之前应该先判断是否已经设置过对应的值 如果设置过  提示 1-覆盖 2-跳过并手动添加
+# 导入之前应该先判断是否已经设置过对应的值[不仅仅是etc/profile这一个配置文件] 如果设置过  提示 1-覆盖 2-跳过并手动添加
 echo 'export GOROOT=/usr/local/go' >> $pathFile
 if [ $? -ne 0 ]; then
 	echo -e -n "\033[01;36m导入环境变量失败，${give_info}\033[0m "
