@@ -5,6 +5,7 @@ export PATH
 
 goone_ver=1.0.2
 give_info="请联系作者，QQ：962310113"
+
 export_goorg_x()
 {
 	cd $GOPATH;
