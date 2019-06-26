@@ -77,7 +77,9 @@ fi
 git clone https://github.com/letseeqiji/oneinstall.git
 cd oneinstall/golang
 其中 goinstall.sh 是主文件，你可以把他复制到任何你想要的目录下面使用并且根据相应的提示操作即可
-sh goinstall.sh
+chmod +x ./goinstall.sh  //切记 一定要首先给goninstall.sh运行权限 否则会报错
+./goinstall.sh           // 运行命令 根据提示操作
+
 ```
 
 ------
