@@ -137,7 +137,7 @@ if [ $? -eq 0 ]; then
 	
 	echo -e -n "\033[01;36m下面将为您自动导入 golang.org/x 包\033[0m "
 	export_goorg_x
-	echo -e -n "\033[01;36mBye V_V"
+	echo -e -n "\033[01;36m安装完毕 Bye V_V \n"
 	exit 0
 else
 	echo -e -n "\033[01;36m安装失败\033[0m "
