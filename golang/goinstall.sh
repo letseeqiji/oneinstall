@@ -5,7 +5,7 @@ export PATH
 
 clear
 
-goone_ver=1.0.2
+goone_ver=1.0.3
 give_info="请联系作者，QQ：962310113"
 
 export_goorg_x()
