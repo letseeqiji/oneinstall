@@ -83,7 +83,7 @@ chmod +x ./goinstall.sh  //切记 一定要首先给goninstall.sh运行权限 �
 ```
 
 ### 截图
-![图片描述](//img.mukewang.com/5d138faf0001804c06270246.png)
+![图片描述](http://file.ituring.com.cn/Original/1906f95358ce265c5557)
 
 ------
 
