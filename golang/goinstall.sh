@@ -28,7 +28,9 @@ export_goorg_x()
        if [ -d "$name" ]
        then
          echo -e -n "\033[01;36m ${name} 包已经存在,请使用git pull来更新源码\n[0m"
+         cd ${name}
          git pull
+         cd ..
        else
          git_url="https://github.com/golang/${name}.git";
          echo -e -n "\033[01;36m开始clone golang.org/x 在github.com上的镜像代码:${git_url}[0m"
