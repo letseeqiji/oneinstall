@@ -93,4 +93,4 @@ chmod +x ./goinstall.sh  //切记 一定要首先给goninstall.sh运行权限 �
 
 ------
 
-*Please report bugs, concerns, suggestions by issues, or join QQ 962310113to discuss problems around source code.*
+*Please report bugs, concerns, suggestions by issues, or join QQ 962310113to discuss problems around source code.* 
